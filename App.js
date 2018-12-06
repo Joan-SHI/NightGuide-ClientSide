@@ -30,7 +30,7 @@ export default class App extends React.Component {
         <NavBar />
         <NightGuideLogo />
         <PlanetDetails /> */}
-        <PlanetList planets={planets} />
+        <PlanetList />
         {/* <Weather />
         <WelcomeInstruction /> */}
       </View>
