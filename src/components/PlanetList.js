@@ -9,7 +9,12 @@ export default class PlanetList extends React.Component {
       <View>
         <List containerStyle={{ marginBottom: 20 }}>
           {planets.map(planet => (
-            <ListItem title={planet.name} location={planet.location} />
+            <ListItem
+            roundAvatar
+              avatar={{ uri: planet.image }}
+              key={planet.name}
+              title={planet.name}
+              />
           ))}
         </List>
       </View>
