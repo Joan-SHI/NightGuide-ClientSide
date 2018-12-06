@@ -1,12 +1,15 @@
 import React from "react";
 import { Text, View } from "react-native";
+import planets from "../../data/planets";
 
-export default class PlanetList extends React.Component {
-  render() {
-    return (
-      <View>
-        <Text>PlanetList</Text>
-      </View>
-    );
-  }
-}
+const PlanetList = props => {
+  return (
+    <View>
+      {props.planets.map(planet => {
+        return <li key={i}>{planet.name}</li>;
+      })}
+    </View>
+  );
+};
+
+export default PlanetList;

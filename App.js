@@ -14,6 +14,7 @@ import PlanetDetails from "./src/components/PlanetDetails";
 import PlanetList from "./src/components/PlanetList";
 import Weather from "./src/components/Weather";
 import WelcomeInstruction from "./src/components/WelcomeInstruction";
+import planets from "./data/planets";
 
 export default class App extends React.Component {
   render() {
@@ -22,16 +23,16 @@ export default class App extends React.Component {
         {/* <BrooklynMap />
         <ConstellationDetails />
         <ConstellationList /> */}
-        <Header />
+        {/* <Header />
         <InstructionContainer />
         <Landing />
         <MenuInstruction />
         <NavBar />
         <NightGuideLogo />
-        <PlanetDetails />
-        <PlanetList />
-        <Weather />
-        <WelcomeInstruction />
+        <PlanetDetails /> */}
+        <PlanetList planets={planets} />
+        {/* <Weather />
+        <WelcomeInstruction /> */}
       </View>
     );
   }
